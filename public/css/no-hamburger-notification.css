@@ -1,0 +1,69 @@
+/* Hapus tombol hamburger dan seluruh elemen notifikasi dari tampilan. */
+.sidebar-toggle,
+.sidebar-overlay,
+.notification-menu,
+.notification-button,
+.notification-dropdown,
+.notification-badge {
+    display: none !important;
+}
+
+/* Topbar tetap rapi setelah dua tombol dihapus. */
+.topbar-left {
+    min-width: 0;
+}
+
+.topbar-actions {
+    margin-left: auto;
+}
+
+/* Tanpa hamburger, navigasi dibuat selalu tersedia di layar kecil. */
+@media (max-width: 991.98px) {
+    .app-shell {
+        display: block;
+    }
+
+    .app-sidebar {
+        position: static !important;
+        inset: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+        transform: none !important;
+        border-right: 0 !important;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-brand {
+        justify-content: flex-start;
+    }
+
+    .sidebar-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: .6rem;
+    }
+
+    .sidebar-link {
+        min-width: 0;
+    }
+
+    .sidebar-bottom {
+        padding: .55rem .7rem .7rem;
+    }
+
+    .logout-button {
+        width: auto;
+        padding-inline: .8rem;
+    }
+
+    .app-main {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sidebar-nav {
+        grid-template-columns: 1fr;
+    }
+}

@@ -47,7 +47,6 @@ Aplikasi menyediakan pengelolaan data dosen, mahasiswa, mata kuliah, jadwal perk
 * CSS
 * Laravel Eloquent ORM
 * Laravel Middleware
-* DomPDF
 * XAMPP
 
 ## Struktur Database
